@@ -24,7 +24,7 @@ import { doc, getDoc, setDoc } from "firebase/firestore";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
-const socket = io("/api/socket/io", { path: "/api/socket/io" });
+const socket = io();
 
 const assets = ["EURUSD", "GBPUSD", "XAUUSD"];
 
